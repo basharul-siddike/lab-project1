@@ -1,4 +1,4 @@
----
+i---
 - hosts: localhost
   become: yes
   become_method: sudo
@@ -49,7 +49,7 @@
       no_log: true
 
     - name: Tag Docker image for Docker Hub
-      command: docker tag mahshamim/abstechnologies "basharulsiddike/labproject01:{{ docker_tag }}"
+      command: docker tag basharulsiddike/labproject01 "basharulsiddike/labproject01:{{ docker_tag }}"
 
     - name: Push Docker image to Docker Hub
       command: docker push "basharulsiddike/labproject01:{{ docker_tag }}"
