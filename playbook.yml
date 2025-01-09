@@ -6,7 +6,7 @@
      ansible_python_interpreter: /home/ubuntu/k8s-ansible-venv/bin/python
      docker_tag: "latest"  # Change this to any tag you want
      container_name: "abctechnologies-ansible"
-     image_name: "mahshamim/abstechnologies-ansible"
+     image_name: "basharulsiddike/abctechnologies-ansible"
      docker_username: "{{ lookup('env', 'DOCKER_USERNAME') }}"
      docker_password: "{{ lookup('env', 'DOCKER_PASSWORD') }}"
      kubeconfig_path: "{{ lookup('env', 'KUBECONFIG_PATH') }}"
